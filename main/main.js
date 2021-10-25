@@ -4,6 +4,9 @@ document.querySelector(".btn_imc").addEventListener("click",
   const altura = document.getElementById("altura").value;  
   const imc = (Number(peso)/Number(altura*altura)).toFixed(1);
 
+  if(peso=="" || altura==""){
+    window.alert("Preencha todos os campos")
+  } else{
   if(imc<18.5){
     document.querySelector(".resultado").innerHTML =`
       IMC - ${imc} \n /
@@ -37,4 +40,5 @@ document.querySelector(".btn_imc").addEventListener("click",
       Situação - Obesidade grau III ou Mórbida
     `;
     }
+  }
 })
