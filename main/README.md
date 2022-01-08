@@ -4,4 +4,4 @@ HTML|
 CSS|
 JS
 </h2>
-<p>Programa desenvoldo para cálcular o IMC, bastar colocar altura e peso, logo em seguida vai aparecer o resultado do IMC e sua situação</p>
+<p>Programa desenvolvido para cálcular o IMC, bastar colocar altura e peso, logo em seguida vai aparecer o resultado do IMC e sua situação</p>
