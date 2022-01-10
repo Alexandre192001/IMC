@@ -8,37 +8,51 @@ document.querySelector(".btn_imc").addEventListener("click",
     window.alert("Preencha todos os campos")
   } else{
   if(imc<18.5){
-    document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n /
-      Situação - Abaixo do peso
+    document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc}
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Abaixo do peso
+    `
     } else if(imc<25){
-      document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n /
-      Situação - Peso normal
+      document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc}
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Peso normal
+    `
     } else if(imc<30){
-      document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n/
-      Situação - Sobrepeso
+      document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc}
+      
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Sobrepeso
+    `
     } else if(imc<35){
-      document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n/
-      Situação - Obesidade grau I
+      document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc}
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Obesidade grau I
+    `
 
     } else if(imc<40){
-      document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n/
-      Situação - Obesidade grau II
+      document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc}
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Obesidade grau II
+    `
     }
     else{
-      document.querySelector(".resultado").innerHTML =`
-      IMC - ${imc} \n/
-      Situação - Obesidade grau III ou Mórbida
+      document.querySelector(".resultado-peso").innerHTML =`
+      IMC : ${imc} 
+      
     `;
+    document.querySelector(".resultado-situacao").innerHTML = `
+    Situação - Obesidade grau III ou Mórbida
+    `
     }
   }
 })
