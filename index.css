@@ -8,22 +8,26 @@
 .sessao-principal{
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(to left,
-  #98a,
-  #87a9);
+  rgb(56, 61, 126),
+  rgba(81, 109, 181, 0.6));
 }
 .titulo-section{
   text-align: center;
   color: #fff;
   font-size: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-shadow: 1px 1px 10px rgb(80, 56, 56);
+  text-shadow: 1px 1px 10px rgb(160, 107, 107);
   font-style: italic;
 }
 .container{
   position: relative;
   border: none;
-  background-color: rgb(116, 110, 104);
+  background-color: rgb(38, 59, 106);
   box-shadow: 2px 2px 1rem;
   width: 50%;
   display: flex;
@@ -40,7 +44,7 @@
   top: 1rem;
   border: none;
   width: 80%;
-  background-color: rgb(65, 60, 70);
+  background-color: rgb(220, 220, 220);
   height: 5rem;
   border-radius: .4rem ;
   box-shadow: .1rem .1rem .5rem #000;
@@ -51,16 +55,15 @@
   
 }
 .resultado-imc>.resultado-peso{
-  color: #fff;
+  color: rgb(5, 5, 5);
   font-size: 20px; 
   font-family:fantasy;
   letter-spacing: .8px;
-  text-shadow: 1px 1px 1px #000;
 }
 .resultado-imc>.resultado-situacao{
   width: 50%;
   font-size: 20px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -96,6 +99,24 @@
   color: #07a;
   text-shadow: none;
   border: solid 1px #07a;
+}
+
+.btn_voltar_port{
+  display: block;
+  border: none;
+  background-color: rgb(37, 39, 53);
+  width: 10%;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: .4rem .4rem;
+  border-radius: .4rem;
+  color: #fff;
+  transition: all .4s;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.btn_voltar_port:hover{
+  transform: scale(1.1);
 }
 
 @media(max-width:560px){

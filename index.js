@@ -1,7 +1,7 @@
 document.querySelector(".btn_imc").addEventListener("click",
 ()=>{
   const peso = document.getElementById("peso").value;
-  const altura = document.getElementById("altura").value;  
+  const altura = document.getElementById("altura").value;
   const imc =Number((peso/(altura*altura))).toFixed(1);
   if(peso=="" || altura==""){
     window.alert("Preencha todos os campos")
