@@ -1,8 +1,8 @@
 document.querySelector(".btn_imc").addEventListener("click",
 ()=>{
-  const peso = document.getElementById("peso").value;
-  const altura = document.getElementById("altura").value;
-  const imc =Number((peso/(altura*altura))).toFixed(1);
+  let peso = document.getElementById("peso").value;
+  let altura = document.getElementById("altura").value;
+  const imc =parseFloat((peso/(altura*altura))).toFixed(1);
   if(peso=="" || altura==""){
     window.alert("Preencha todos os campos")
   } else{
@@ -53,5 +53,8 @@ document.querySelector(".btn_imc").addEventListener("click",
     Situação - Obesidade grau III ou Mórbida
     `
     }
+
+    document.querySelector("#peso").value=""
+    document.querySelector("#altura").value=""
   }
 })
