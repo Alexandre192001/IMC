@@ -1,5 +1,8 @@
+
+/*Botão de calculo IMC*/ 
 document.querySelector(".btn_imc").addEventListener("click",
 ()=>{
+  /*Valores de peso e altura*/
   let peso = document.getElementById("peso").value;
   let altura = document.getElementById("altura").value/100;
   const imc =(peso/altura**2).toFixed(1);

@@ -25,6 +25,8 @@
   text-shadow: 1px 1px 10px rgb(160, 107, 107);
   font-style: italic;
 }
+
+/* Container Pai do IMC */
 .container{
   position: relative;
   border: none;
@@ -40,6 +42,7 @@
   border-radius: .4rem;
   margin-right: auto;
 }
+/* Resultado imc - Pai */
 .resultado-imc{
   position: absolute;
   top: 1rem;
@@ -55,12 +58,14 @@
   overflow: hidden;
   
 }
+/* Resultado imc - filho */
 .resultado-imc>.resultado-peso{
   color: rgb(5, 5, 5);
   font-size: 20px; 
   font-family:fantasy;
   letter-spacing: .8px;
 }
+/* Situação IMC */
 .resultado-imc>.resultado-situacao{
   width: 50%;
   font-size: 20px;
@@ -68,6 +73,7 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+/* Inputs de peso e altura */
 .calculador-valores{
   position: absolute;
   top: 8rem;
@@ -76,6 +82,7 @@
 
 
 }
+/* Estilização dos inputs */
 .calculador-valores>input,
 .calculador-valores>button{
   padding: .4rem .4rem;
@@ -85,6 +92,8 @@
   border-radius: .4rem;
   outline: none;
 }
+
+/* Button para calcular IMC */
 .calculador-valores>button{
   background-color: #07a;
   color: #fff;
@@ -94,7 +103,7 @@
   cursor: pointer;
   transition: .4s;
 }
-
+/* Animação para o  button de calculo IMC */
 .calculador-valores>button:hover{
   background-color: #fff;
   color: #07a;
@@ -102,6 +111,7 @@
   border: solid 1px #07a;
 }
 
+/* Botão para voltar para o portfolio */
 .btn_voltar_port{
   display: block;
   border: none;
@@ -116,10 +126,11 @@
   margin: 1rem 0;
   text-decoration: none;
 }
+/* Animação para o botão voltar */
 .btn_voltar_port:hover{
   transform: scale(1.1);
 }
-
+/* Responsividade */
 @media(max-width:560px){
   .resultado-imc{
     flex-direction: column;
