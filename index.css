@@ -132,17 +132,15 @@
 }
 /* Responsividade */
 @media(max-width:560px){
+
+  .container{
+    width: 90%;
+  }
   .resultado-imc{
     flex-direction: column;
   }
   .resultado-imc>.resultado-peso,
   .resultado-imc>.resultado-situacao{
     font-size: 13px;
-  }
-}
-
-@media(max-width:412px){
-  .resultado-imc>.resultado{
-    font-size: 15px;
   }
 }
