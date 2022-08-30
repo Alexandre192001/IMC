@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.sessao-principal {
+  background-color: #1b1b24;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+  font-family: "Quicksand";
+  overflow: hidden;
+}
+.sessao-principal .titulo-section {
+  position: relative;
+}
+.sessao-principal .titulo-section:before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.sessao-principal .container {
+  gap: 1rem;
+  width: 30rem;
+  height: 20rem;
+  background-color: #585d8b;
+  display: flex;
+  border: none;
+  border-radius: 0.4rem;
+  flex-direction: column;
+  box-shadow: 1px 1px 0.5rem rgba(255, 255, 255, 0.667);
+  align-items: center;
+  justify-content: center;
+}
+.sessao-principal .container .resultado-imc {
+  background-color: #fff;
+  width: 80%;
+  height: 4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+.sessao-principal .container .calculador-valores {
+  width: 80%;
+  height: 8rem;
+  background-color: #7575a8;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  box-shadow: inset 1px 1px 0.5rem #fff;
+}
+.sessao-principal .container .calculador-valores input {
+  width: 60%;
+  border: none;
+  padding: 0.3rem;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Quicksand";
+}
+.sessao-principal .container .calculador-valores button {
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  font-family: "Quicksand";
+  color: #fff;
+  background-color: #af9c66;
+  transition: all 0.2s ease-in-out;
+}
+.sessao-principal .container .calculador-valores button:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: inset 2px 2px 1rem #af9c66;
+}
+.sessao-principal a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #292b49;
+  padding: 1rem;
+  display: block;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease;
+}
+.sessao-principal a:hover {
+  background-color: #fff;
+  color: #292b49;
+  transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+  .sessao-principal .container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
