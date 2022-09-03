@@ -22,6 +22,6 @@
 <li>Altura - Aqui será colocado sua altura atual;</li>
 <li>Calcular - Após preencher os dois campos, clica nesse botão para efetuar o cálculo.</li>
 </ul>
-
+<hr>
 Link do projeto : https://calculadora-imc-alexandre.netlify.app
 
