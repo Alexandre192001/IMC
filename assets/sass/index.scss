@@ -9,8 +9,12 @@ $font-quicksand: "Quicksand";
   box-sizing: border-box;
 }
 
-.sessao-principal{
-  background-color: rgb(27, 27, 36);
+.container-main.dark-container{
+  background-color: #000;
+}
+
+.container-main{
+  background-color: rgb(255, 255, 255);
   width: 100%;
   position: relative;
   height: 100vh;
@@ -22,9 +26,31 @@ $font-quicksand: "Quicksand";
   gap: 1rem;
   font-family: $font-quicksand;
   overflow: hidden;
+  transition: all .4s;
+
+  .dark-ligth-wrapper{
+    cursor: pointer;
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+    color: #000;
+    font-size: 3rem;
+    
+    i{
+      color: rgb(4, 4, 4);
+    }
+    i.dark-ligth{
+      color: #fff;
+    }
+  }
+
+  .titulo-section.title-dark{
+    color: #fff;
+  }
 
   .titulo-section{
     position: relative;
+    color: #000;
    
     &:before{
       position: absolute;
@@ -37,11 +63,13 @@ $font-quicksand: "Quicksand";
     }
   }
 
+  
+
   .container{
-    gap: 1rem;
+    gap: 3rem;
     width: 30rem;
-    height: 20rem;
-    background-color: rgb(88, 93, 139);
+    height: 30rem;
+    background-color: rgb(59, 60, 65);
     display:flex;
     border: none;
     border-radius:.4rem;
@@ -50,9 +78,11 @@ $font-quicksand: "Quicksand";
     align-items: center;
     justify-content: center;
 
+    
+
     .resultado-imc{
       background-color: #fff;
-      width: 80%;
+      width: 90%;
       height: 4rem;
       border-radius: .4rem;
       display: flex;
@@ -66,19 +96,17 @@ $font-quicksand: "Quicksand";
     .calculador-valores{
       width: 80%;
       height: 8rem;
-      background-color: rgb(117, 117, 168);
       border-radius: .4rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
       justify-content: center;
-      box-shadow: inset 1px 1px .5rem #fff;
 
       input{
-        width: 60%;
+        width: 90%;
         border: none;
-        padding: .3rem;
+        padding: 1rem;
         outline: none;
         border-radius: .2rem;
         font-family: $font-quicksand;
@@ -87,8 +115,9 @@ $font-quicksand: "Quicksand";
       button{
         cursor: pointer;
         border: none;
-        width: 50%;
-        padding: .4rem 1rem;
+        width: 90%;
+        font-size: 15px;
+        padding: 1rem;
         border-radius: .2rem;
         font-family: $font-quicksand;
         color: #fff;
@@ -97,8 +126,7 @@ $font-quicksand: "Quicksand";
 
         &:hover{
           background-color:#fff;
-          color: #000;
-          box-shadow: inset 2px 2px 1rem rgb(175, 156, 102) ;
+          color: rgb(175, 156, 102);
         }
       }
     }

@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "sass": "^1.54.6"
-  }
+  },
+  "name": "imc",
+  "description": "<h1>Calculadora - IMC</h1>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch assets/sass/index.scss:assets/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandre192001/IMC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre192001/IMC/issues"
+  },
+  "homepage": "https://github.com/Alexandre192001/IMC#readme"
 }
