@@ -27,8 +27,8 @@
 .container-main .dark-ligth-wrapper {
   cursor: pointer;
   position: fixed;
-  right: 5rem;
-  top: 5rem;
+  right: 2rem;
+  top: 3rem;
   color: #000;
   font-size: 3rem;
 }
@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 500px) {
-  .sessao-principal .container {
+  .container-main .container {
     width: 90%;
   }
 }
