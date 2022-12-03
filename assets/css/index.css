@@ -13,7 +13,7 @@
   background-color: rgb(255, 255, 255);
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 .container-main .dark-ligth-wrapper {
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 2rem;
   top: 3rem;
   color: #000;
