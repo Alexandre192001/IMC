@@ -124,6 +124,7 @@
 }
 .container-main a:hover {
   background-color: #fff;
+  border: solid 1px rgb(41, 43, 73);
   color: rgb(41, 43, 73);
   transform: scale(1.2);
 }

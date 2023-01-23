@@ -1,22 +1,32 @@
-// DARK/LIGTH
-const dark = document.querySelector(".dark-ligth-wrapper")
+const darkLigth = document.querySelector(".bi-moon-stars-fill")
 
-dark.addEventListener("click", () => {
-  document.querySelector(".bi-sun-fill").classList.toggle("dark-ligth")
-  document.querySelector(".container-main").classList.toggle("dark-container")
-  document.querySelector(".titulo-section").classList.toggle("title-dark")
+darkLigth.addEventListener("click", function()  {
+  if(this.classList.toggle("bi-sun-fill")){
+    this.classList.remove("bi-moon-stars-fill")
+    this.style.color="#fff"
+    document.querySelector(".container-main").classList.add("dark-container")
+    document.querySelector(".titulo-section").classList.add("title-dark")
+  } else if(this.classList.toggle("bi-moon-stars-fill")){
+    this.classList.remove("bi-sun-fill")
+    this.style.color="#000"
+    document.querySelector(".container-main").classList.remove("dark-container")
+    document.querySelector(".titulo-section").classList.remove("title-dark")
+  }
+  
 })
 
 
-/*Botão de calculo IMC*/
 document.querySelector(".btn_imc").addEventListener("click",
   () => {
-    /*Valores de peso e altura*/
+
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value / 100;
+
     const imc = (peso / altura ** 2).toFixed(1);
+
     if (peso == "" || altura == "") {
       window.alert("Preencha todos os campos")
+
     } else {
       if (imc < 18.5) {
         document.querySelector(".resultado-peso").innerHTML = `
